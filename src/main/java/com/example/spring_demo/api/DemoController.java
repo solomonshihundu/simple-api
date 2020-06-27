@@ -1,22 +1,21 @@
 package com.example.spring_demo.api;
 
-import org.springframework.boot.ApplicationRunner;
-import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.spring_demo.model.User;
-import com.example.spring_demo.services.ClientRepository;
+import com.example.spring_demo.services.ClientService;
 
 @RestController
 public class DemoController
 {
 	
-	private ClientRepository clientRepository;
 	
-	public DemoController(ClientRepository clientRepository )
+	private ClientService clientService;
+	
+	public DemoController(ClientService clientService )
 	{
-		this.clientRepository = clientRepository;
+		this.clientService = clientService;
 		
 	}
 	
@@ -28,18 +27,13 @@ public class DemoController
 	@GetMapping("/users")
 	Iterable<User>users()
 	{
-		return clientRepository.findAll();
+		return clientService.findAll();
 	}
 	
-	@Bean
-	ApplicationRunner applicationRunner(ClientRepository clientRepository)
+	@GetMapping("/users/count")
+	public Long count()
 	{
-		
-		return  args ->{
-			clientRepository.save(new User("001","Rample"));
-			clientRepository.save(new User("002","Stilkin"));
-			
-		};
+		return clientService.count();
 	}
 
 }
