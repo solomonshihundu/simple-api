@@ -12,14 +12,4 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 	
-	@RestController
-	class DemoController
-	{
-		@GetMapping("/")
-		String testFunc(){
-			return "Yeeeeeeaaaahhh !!!  I'm Working !";
-		}
-	}
-	
-
 }
