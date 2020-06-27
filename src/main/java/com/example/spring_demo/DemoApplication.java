@@ -14,7 +14,7 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 	
-	@RequestMapping("api/v1/house")
+	@RequestMapping("/")
 	@ResponseBody
 	String home()
 	{
