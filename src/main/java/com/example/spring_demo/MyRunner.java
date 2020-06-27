@@ -20,13 +20,13 @@ public class MyRunner implements CommandLineRunner {
     @Transactional
     public void run(String... args) throws Exception {    
 
-        var u1 = new User("001","Mike Will Made It");
+        User u1 = new User("001","Mike Will Made It");
         clientRepository.save(u1);
 
-        var u2 = new User("002", "Rample Stilkskin");
+        User u2 = new User("002", "Rample Stilkskin");
         clientRepository.save(u2);
 
-        var u3 = new User("003", "Roberto Felipe Ricardo");
+        User u3 = new User("003", "Roberto Felipe Ricardo");
         clientRepository.save(u3);
     }
 }

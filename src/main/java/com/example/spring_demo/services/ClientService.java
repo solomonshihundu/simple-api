@@ -17,8 +17,8 @@ public class ClientService
 	
 	public List<User>findAll(){
 		
-		var it = clientRepository.findAll();
-		var users = new ArrayList<User>();
+		Iterable<User> it = clientRepository.findAll();
+		List<User>users = new ArrayList<User>();
 		
 		it.forEach(e -> users.add(e));
 		
