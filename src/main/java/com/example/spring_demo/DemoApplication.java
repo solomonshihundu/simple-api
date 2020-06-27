@@ -20,6 +20,5 @@ public class DemoApplication {
 	{
 		return "Yeeeeeeaaaahhh !!!  I'm Working !";
 	}
-	
 
 }
