@@ -1,0 +1,6 @@
+app:
+   datasource:
+      jdbc-url: postgres://zxucmxpovnensd:f1aeef8095fb644786f37dcb49aba9fcdff38aa3a2cafab957cff833aa49c3a5@ec2-54-236-169-55.compute-1.amazonaws.com:5432/d5nmsmnatt0erl
+      username: zxucmxpovnensd
+      password: f1aeef8095fb644786f37dcb49aba9fcdff38aa3a2cafab957cff833aa49c3a5
+      poolsize: 30
