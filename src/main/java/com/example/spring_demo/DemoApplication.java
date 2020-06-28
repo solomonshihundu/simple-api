@@ -16,6 +16,7 @@ public class DemoApplication {
 	}
 	
 	
+	/*
 	@Bean
 	ApplicationRunner applicationRunner(ClientRepository clientRepo)
 	{
@@ -24,6 +25,6 @@ public class DemoApplication {
 			clientRepo.save(new User("002", "Rample Stilkskin"));
 		};
 	}
-	
+	*/
 	
 }
