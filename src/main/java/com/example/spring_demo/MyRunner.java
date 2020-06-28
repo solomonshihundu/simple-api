@@ -9,7 +9,6 @@ import org.springframework.stereotype.Component;
 import com.example.spring_demo.model.User;
 import com.example.spring_demo.services.ClientRepository;
 
-/*
 @Component
 public class MyRunner implements CommandLineRunner {
 
@@ -31,4 +30,3 @@ public class MyRunner implements CommandLineRunner {
         clientRepository.save(u3);
     }
 }
-*/
