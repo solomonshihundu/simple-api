@@ -9,11 +9,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.spring_demo.model.User;
 import com.example.spring_demo.services.ClientService;
 
+@RequestMapping("api/v1/")
 @RestController
 public class DemoController
 {
@@ -39,13 +41,13 @@ public class DemoController
 		return clientService.getAllUsers();
 	}
 	
-	@GetMapping(path = "{id}")
+	@GetMapping("/users/{id}")
 	public User getUserById(@PathVariable("id")String id)
 	{
 		return clientService.getUserById(id).orElse(null);
 	}
 	
-	@DeleteMapping
+	@DeleteMapping("/users/{id}")
 	public void deleteUserById(@PathVariable("id") String id)
 	{
 		 clientService.deleteUser(id);

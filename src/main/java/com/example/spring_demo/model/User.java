@@ -1,24 +1,14 @@
 package com.example.spring_demo.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
-@Entity
 public class User
 {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name="id")
-	private String id;
 	
-	@Column(name = "name")
+	private String id;
 	private String name;
 	
-	public User(String id,String name)
+	public User(@JsonProperty String id,@JsonProperty String name)
 	{
 		this.id = id;
 		this.name = name;

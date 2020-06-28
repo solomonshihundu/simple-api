@@ -2,8 +2,9 @@ package com.example.spring_demo.services;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.UUID;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import com.example.spring_demo.dao.UserDao;
@@ -14,7 +15,8 @@ public class ClientService
 {
 	private final UserDao userDao;
 
-	public ClientService(UserDao userDao) {
+	@Autowired
+	public ClientService(@Qualifier("postgres_implementation") UserDao userDao) {
 		this.userDao = userDao;
 	}
 	

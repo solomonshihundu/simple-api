@@ -1,0 +1,1 @@
+INSERT INTO userdata (id,name) VALUES ('001','Rample Stilskin');
