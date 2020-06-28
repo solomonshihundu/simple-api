@@ -10,7 +10,8 @@ import com.example.spring_demo.model.User;
 import com.example.spring_demo.services.ClientRepository;
 
 @Component
-public class MyRunner implements CommandLineRunner {
+public class MyRunner implements CommandLineRunner
+{
 
   
     @Autowired
@@ -18,7 +19,8 @@ public class MyRunner implements CommandLineRunner {
 
     @Override
     @Transactional
-    public void run(String... args) throws Exception {    
+    public void run(String... args) throws Exception 
+    {    
 
         User u1 = new User("001","Mike Will Made It");
         clientRepository.save(u1);
@@ -29,4 +31,5 @@ public class MyRunner implements CommandLineRunner {
         User u3 = new User("003", "Roberto Felipe Ricardo");
         clientRepository.save(u3);
     }
+    
 }
