@@ -9,8 +9,10 @@ import org.springframework.context.annotation.Configuration;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
+/*
 @Configuration
-public class DatabaseConfig {
+public class DatabaseConfig 
+{
 	
 	@Value("${spring.datasource.url}")
 	private String dbUrl;
@@ -22,5 +24,7 @@ public class DatabaseConfig {
 		config.setJdbcUrl(dbUrl);
 		return new HikariDataSource(config);
 	}
+	
+	}
+	*/
 
-}
