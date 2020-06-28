@@ -1,6 +1,0 @@
-app:
-   datasource:
-      jdbc-url: jdbc:postgresql://localhost:5432/clientdata
-      username: postgres
-      password: qwerty
-      poolsize: 30

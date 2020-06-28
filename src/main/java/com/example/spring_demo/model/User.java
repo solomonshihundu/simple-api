@@ -1,10 +1,18 @@
 package com.example.spring_demo.model;
 
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+@Entity
 public class User
 {
 	
+	@Id
+	@GeneratedValue()
 	private String id;
 	private String name;
 	
