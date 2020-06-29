@@ -1,5 +1,6 @@
 package com.example.spring_demo.services;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -13,6 +14,8 @@ import com.example.spring_demo.model.User;
 @Service
 public class ClientService 
 {
+	/*
+
 	private final UserDao userDao;
 
 	@Autowired
@@ -44,10 +47,10 @@ public class ClientService
 	{
 		return userDao.updateUserById(id, userUpdate);
 	}
-	
-	/*
+	 */
+
 	@Autowired
-	private ClientRepository clientRepository;
+	private UserRepository clientRepository;
 	
 	public List<User>findAll(){
 		
@@ -59,10 +62,17 @@ public class ClientService
 		return users;
 		
 	}
-	
-	
-	
-	
-	*/
+
+	public Optional<User> getUserById(String id)
+	{
+		return clientRepository.findById(id);
+	}
+
+	public int deleteUser(String id)
+	{
+		 clientRepository.deleteById(id);
+		 return 1;
+	}
+
 
 }
