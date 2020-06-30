@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.spring_demo.model.User;
 import com.example.spring_demo.services.ClientService;
 
-@RequestMapping("api/v1/")
 @RestController
 public class DemoController
 {
