@@ -16,6 +16,7 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
+	/*
 	@Bean
 	ApplicationRunner applicationRunner(UserRepository userRepository)
 	{
@@ -24,6 +25,7 @@ public class DemoApplication {
 			userRepository.save(new User("004","Victor von Bistiek"));
 		};
 	}
+	 */
 
 }
 
