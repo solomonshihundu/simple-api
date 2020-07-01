@@ -4,12 +4,12 @@ import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 import com.example.spring_demo.model.User;
 import com.example.spring_demo.services.UserRepository;
 
+/*
 @Component
 public class RunnerApp implements CommandLineRunner
 {
@@ -17,7 +17,6 @@ public class RunnerApp implements CommandLineRunner
 	@Autowired
 	private UserRepository userRepo;
 
-	
 	@Override
 	@Transactional
 	public void run(String... args) throws Exception {
@@ -30,3 +29,4 @@ public class RunnerApp implements CommandLineRunner
 	}
 
 }
+*/

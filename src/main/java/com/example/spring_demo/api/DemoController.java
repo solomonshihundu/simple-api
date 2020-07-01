@@ -32,7 +32,7 @@ public class DemoController
 	@GetMapping("/users")
 	public List<User>getAllUsers()
 	{
-		return clientService.findAll();
+		return clientService.getAllUsers();
 	}
 	
 	@GetMapping("/users/{id}")

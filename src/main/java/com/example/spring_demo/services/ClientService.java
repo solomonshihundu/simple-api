@@ -14,7 +14,6 @@ import com.example.spring_demo.model.User;
 @Service
 public class ClientService 
 {
-	/*
 
 	private final UserDao userDao;
 
@@ -47,8 +46,9 @@ public class ClientService
 	{
 		return userDao.updateUserById(id, userUpdate);
 	}
-	 */
 
+
+	/*
 	@Autowired
 	private UserRepository clientRepository;
 	
@@ -73,6 +73,6 @@ public class ClientService
 		 clientRepository.deleteById(id);
 		 return 1;
 	}
-
+*/
 
 }
