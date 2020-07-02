@@ -22,7 +22,10 @@ public class PostgresDataSource
 		hikariConfig.setUsername("koicciziwdtamp");
 		hikariConfig.setPassword("e3535d3fdb967f4baedc84c13e5b10a6de42ee9f93d89b3e11e8309cf62b8192");
 
-		return DataSourceBuilder.create().type(HikariDataSource.class).build();
+		hikariDataSource = new HikariDataSource(hikariConfig);
+		return hikariDataSource;
+
+	//	return DataSourceBuilder.create().type(HikariDataSource.class).build();
 	}
 
 }
