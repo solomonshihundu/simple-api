@@ -13,7 +13,10 @@ public class PostgresDataSource
 	@ConfigurationProperties("app.datasource")
 	public HikariDataSource hikariDataSource()
 	{
-		return DataSourceBuilder.create().type(HikariDataSource.class).build().setDriverClassName();
+			HikariDataSource hikariDataSource =	DataSourceBuilder.create().type(HikariDataSource.class).build();
+		    //hikariDataSource.setDriverClassName("");
+
+			return hikariDataSource;
 	}
 
 }
