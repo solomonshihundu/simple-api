@@ -14,8 +14,6 @@ public class PostgresDataSource
 	public HikariDataSource hikariDataSource()
 	{
 			HikariDataSource hikariDataSource =	DataSourceBuilder.create().type(HikariDataSource.class).build();
-		    //hikariDataSource.setDriverClassName("");
-
 			return hikariDataSource;
 	}
 
